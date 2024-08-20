@@ -9,6 +9,8 @@ import com.example.demo.DTO.UserDto;
 import com.example.demo.model.Role;
 import com.example.demo.repository.UserRepository;
 
+import jakarta.annotation.PostConstruct;
+
 import java.sql.Timestamp;
 import java.util.List;
 
@@ -104,5 +106,19 @@ public class UserService {
     public Boolean isPhoneExist(String phone) {
         return userRepository.findByPhone(phone) != null;
     }
+
+    @PostConstruct
+    public void init() {
+        String email = "admin@gmail.com";
+        String password = passwordEncoder.encode("12345");
+        if(userRepository.findByEmail(email) == null){
+            User user = new User.UserBuilder("Admin", "1234567890", email, password, "testAddress", Role.ADMIN)
+                    .status(true)
+                    .created_at(new Timestamp(System.currentTimeMillis()))
+                    .build();
+            userRepository.save(user);
+        }
+    }
+
 
 }
