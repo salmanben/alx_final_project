@@ -44,7 +44,7 @@ git clone https://github.com/username/alixa-platform.git
 
 
 ## Video Recorder
-Here is a brief demonstration of some features and usage of ShopNet Ecommerce Platform: [Video Recorder](https://drive.google.com/file/d/1UA9tGgSDFkRSw4hV5Il03rH9Tgq-YPpB/view?usp=sharing)
+Here is a brief demonstration of some features and usage of alixa Platform: [Video Recorder](https://drive.google.com/file/d/1UA9tGgSDFkRSw4hV5Il03rH9Tgq-YPpB/view?usp=sharing)
 
 ## Contributing
 We welcome contributions from the community to improve Alixa Platform. If you have ideas for new features, bug fixes, or enhancements, please feel free to submit a pull request on GitHub.
