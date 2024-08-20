@@ -1,0 +1,27 @@
+<form th:fragment="awsS3" th:object="${awsS3Settings}" th:action="@{/admin/settings/awsS3/update}" method="post" class="col-lg-8">
+    <div class="mb-3">
+        <label class="form-label" for="accessKey">Access Key</label>
+        <input type="text" class="form-control shadow-none" name="accessKey" th:field="*{accessKey}" required placeholder="Access Key" id="accessKey" value="">
+        <p th:if="${#fields.hasErrors('accessKey')}" th:text="${#fields.errors('accessKey')[0]}" class="text-danger"></p>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="secretKey">Secret Key</label>
+        <input type="text" class="form-control shadow-none" name="secretKey" th:field="*{secretKey}" required placeholder="Secret Key" id="secretKey" value="">
+        <p th:if="${#fields.hasErrors('secretKey')}" th:text="${#fields.errors('secretKey')[0]}" class="text-danger"></p>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="region">Region</label>
+        <input type="text" class="form-control shadow-none" name="region" th:field="*{region}" required placeholder="Region" id="region" value="">
+        <p th:if="${#fields.hasErrors('region')}" th:text="${#fields.errors('region')[0]}" class="text-danger"></p>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="bucketName">Bucket Name</label>
+        <input type="text" class="form-control shadow-none" name="bucketName" th:field="*{bucketName}" required placeholder="Bucket Name" id="bucketName" value="">
+        <p th:if="${#fields.hasErrors('bucketName')}" th:text="${#fields.errors('bucketName')[0]}" class="text-danger"></p>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Save Settings</button>
+</form>
