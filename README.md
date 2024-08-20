@@ -19,6 +19,7 @@ To set up and run the ALIXA Construction Materials Platform on your local machin
 ### Clone the Repository
 ```bash
 git clone https://github.com/username/alixa-platform.git
+```
 
 ### Setup Instructions
 
