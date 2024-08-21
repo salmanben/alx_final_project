@@ -1,4 +1,4 @@
-# ALIXA Construction Materials Reservation Platform
+# ALIXA - Construction Materials Reservation Platform
 
 Welcome to ALIXA, a comprehensive platform designed for the seamless reservation of construction materials. ALIXA enables clients and suppliers in the construction industry to efficiently manage material reservations with real-time inventory updates and a user-friendly interface.
 
